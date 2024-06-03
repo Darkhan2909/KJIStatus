@@ -1,0 +1,244 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.KJI--container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.KJI--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.KJI--back-button {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.KJI--application-info p {
+    margin: 0;
+    color: #666;
+}
+
+.KJI--application-info h2 {
+    margin: 5px 0 0;
+}
+
+.KJI--content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.KJI--left-panel, .KJI--right-panel {
+    width: 48%;
+}
+
+.KJI--step {
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 12px 24px 0px rgba(132, 146, 166, 0.16);
+    padding: 13px;
+}
+
+.KJI--step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.KJI--step-header h3 {
+    margin: 0;
+}
+
+.KJI--step-content {
+    /* background-color: #fff; */
+    padding: 10px;
+    /* border: 1px solid #f1f1f1; */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.KJI--step-content p {
+    margin: 10px 0;
+}
+
+.KJI--doc-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.KJI--doc-button:hover {
+    background-color: #0056b3;
+}
+
+.KJI--applicant-info, .KJI--deposit-info {
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.KJI--deposit {
+    background-color: rgba(218, 230, 248, 1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: grid;
+    gap: 13px;
+}
+
+.KJI--details-button {
+    border: 1px solid rgba(209, 212, 215, 1);
+    padding: 6px 20px 6px 20px;
+    border-radius: 6px;
+    width: 100%;
+    color: rgba(51, 56, 57, 1);
+    background: white;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.KJI--details-button:hover {
+    /* background-color: #218838; */
+}
+.KJI--right-panel {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 44%;
+    height: max-content;
+}
+
+.KJI--applicant-info {
+    background: rgba(235, 239, 241, 1);
+    border-radius: 8px;
+}
+
+.KJI--deposit * {
+    margin: 0;
+}
+
+div.KJI--deposit-info {
+    padding: 0;
+}
+.KJI--step-header span, .KJI--step-content span,p.KJI--deposit--datas span {
+    font-size: 14px;
+    color: rgba(122, 126, 129, 1);
+}
+
+.KJI--container * {
+    font-family: "Ubuntu";
+}
+
+button.KJI--doc-button {
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* .KJI--step-content {} */
+
+.KJI--step-content button.KJI--doc-button {
+    background: transparent;
+    border-color: rgba(8, 86, 177, 1);
+    color: rgba(8, 86, 177, 1);
+    border: 1px solid;
+    font-size: 16px;
+}
+.KJI--left-panel * {
+    margin: 0;
+}
+
+.KJI--left-panel {
+    display: grid;
+    gap: 21px;
+}
+
+div.KJI--step-content * {
+    margin: 0;
+}
+p.KJI--step-content_status {
+    background: rgba(231, 245, 238, 1);
+    width: max-content;
+    border: 1px solid teal;
+    border-radius: 40px;
+    padding: 4px 12px;
+}
+p.KJI--step-content_status.done {
+    background: rgba(38, 197, 105, 1);
+    color: white;
+    border-color: rgba(38, 197, 105, 1);
+}
+
+p.KJI--step-content_status {
+    font-size: 13px;
+}
+.KJI--step-content {
+    display: grid;
+    gap: 13px;
+}
+p.KJI--step-content--done {
+    background: rgba(231, 245, 238, 1);
+    width: auto;
+    border-radius: 8px;
+    padding: 15px 16px;
+    border-color: teal;
+    border: 1px solid teal;
+}
+p.KJI--step-content_status.actives {
+    background: rgba(0, 127, 245, 1);
+    color: white;
+    border-color: rgba(0, 127, 245, 1);
+}
+p.KJI--step-content--points {
+    background: rgba(235, 239, 241, 1);
+    padding: 13px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+p.KJI--deposit--counts {
+    display: grid;
+    gap: 7px;
+}
+.KJI--applicant-info-clients p {
+    margin: 0;
+}
+
+.KJI--applicant-info-clients {
+    display: grid;
+    gap: 7px;
+    margin-bottom: 13px;
+}
+
+.KJI--applicant-info-clients span {
+    font-size: 14px;
+    color: rgba(122, 126, 129, 1);
+}
+
+.KJI--applicant-info hr {
+    color: rgba(173, 176, 178, 1);
+    background: rgba(173, 176, 178, 1);
+}

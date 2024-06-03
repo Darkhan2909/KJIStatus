@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.KJI-modal--overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.KJI-modal--container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.KJI-modal--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.KJI-modal--header h2 {
+    margin: 0;
+}
+
+.KJI-modal--close-button {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.KJI-modal--subheader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.KJI-modal--applicant-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.KJI-modal--applicant-table th, .KJI-modal--applicant-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.KJI-modal--applicant-table th {
+    background-color: #f2f2f2;
+}
+
+.KJI-modal--status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.KJI-modal--passed {
+    background-color: #e0f8e0;
+    color: #00a651;
+    border: 1px solid #00a651;
+}
+
+.KJI-modal--failed {
+    background-color: #fde0e0;
+    color: #e60000;
+    border: 1px solid #e60000;
+}
+
+.KJI-modal--highlight {
+    background-color: #e0f8f8;
+}
+
+.KJI-modal--highlight .KJI-modal--status {
+    background-color: #e0f8f8;
+    border: 1px solid #00a651;
+    color: #00a651;
+}
+table.KJI-modal--applicant-table tbody tr td.KJI-modal--status.KJI-modal--passed {
+    border: 1px solid teal;
+    background: rgba(231, 245, 238, 1);
+    border-radius: 40px;
+    place-self: center;
+    padding: 4px 12px;
+    color: rgba(51, 56, 57, 1);
+    font-size: 12px;
+}
+table.KJI-modal--applicant-table tbody tr td,table.KJI-modal--applicant-table tbody tr td:last-child {
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border: 0;
+    justify-self: center;
+}
+table.KJI-modal--applicant-table tr {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid;
+}
+
+table.KJI-modal--applicant-table tr:last-child, table.KJI-modal--applicant-table tr:last-child {
+    border: 0;
+}
+
+table.KJI-modal--applicant-table thead tr th {
+    border: 0;
+    text-align-last: center;
+}
+
+table.KJI-modal--applicant-table thead tr {
+    padding: 0px;
+}
+
+body table.KJI-modal--applicant-table tr *:first-child, body table.KJI-modal--applicant-table tr *:nth-child(2) {text-align-last: left;width: 100%;}
+
+body table.KJI-modal--applicant-table tr *:nth-child(3) {
+    text-align-last: end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+table.KJI-modal--applicant-table tbody tr td.KJI-modal--status.KJI-modal--failed {
+    background: rgba(235, 239, 241, 1);
+    color: rgba(51, 56, 57, 1);
+    font-size: 12px;
+    border-radius: 40px;
+    height: max-content;
+    border: 1px solid rgba(235, 239, 241, 1);
+}
+
+table.KJI-modal--applicant-table {
+    height: 544px;
+    overflow-y: scroll;
+    display: block;
+}
+table.KJI-modal--applicant-table thead {
+    position: sticky;
+    width: max-content;
+    display: contents;
+}
